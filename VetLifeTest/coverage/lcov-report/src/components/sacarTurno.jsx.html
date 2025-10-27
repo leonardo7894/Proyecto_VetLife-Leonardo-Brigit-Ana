@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">23.21% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>13/56</span>
+                <span class='fraction'>0/56</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">34.92% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>22/63</span>
+                <span class='fraction'>0/63</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">7.69% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/13</span>
+                <span class='fraction'>0/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">28.88% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>13/45</span>
+                <span class='fraction'>0/45</span>
             </div>
         
             
@@ -293,33 +293,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -330,6 +319,17 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -352,7 +352,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -517,19 +517,19 @@
 import { useParams, useNavigate } from "react-router";
 import "../App.css";
 &nbsp;
-export default function Formulario({ pasoInicial = <span class="branch-0 cbranch-no" title="branch not covered" >1 </span>}) {
-  const [pasoActual, setPasoActual] = useState(pasoInicial);
-  const { especialidad } = useParams();
-  const pagina = useNavigate();
-  const [email, setEmail] = useState("");
-  const [telefono, setTelefono] = useState("");
-  const [direccion, setDireccion] = useState("");
-  const [error, setError] = useState("");
-  const [nombre, setNombre] = useState("");
-  const [apellido, setApellido] = useState("");
-  const [fecha, setFecha] = useState("");
-  const [hora, setHora] = useState("");     
-  const irATurnoAgendado = <span class="fstat-no" title="function not covered" >()</span> =&gt;{<span class="cstat-no" title="statement not covered" >pagina("/turnoAgendado", { state: {nombre, apellido,email,telefono,direccion,fecha,hora,especialidad}})}</span>
+export default function <span class="fstat-no" title="function not covered" >Formulario(</span>{ pasoInicial = <span class="branch-0 cbranch-no" title="branch not covered" >1 </span>}) {
+  const [pasoActual, setPasoActual] = <span class="cstat-no" title="statement not covered" >useState(pasoInicial);</span>
+  const { especialidad } = <span class="cstat-no" title="statement not covered" >useParams();</span>
+  const pagina = <span class="cstat-no" title="statement not covered" >useNavigate();</span>
+  const [email, setEmail] = <span class="cstat-no" title="statement not covered" >useState("");</span>
+  const [telefono, setTelefono] = <span class="cstat-no" title="statement not covered" >useState("");</span>
+  const [direccion, setDireccion] = <span class="cstat-no" title="statement not covered" >useState("");</span>
+  const [error, setError] = <span class="cstat-no" title="statement not covered" >useState("");</span>
+  const [nombre, setNombre] = <span class="cstat-no" title="statement not covered" >useState("");</span>
+  const [apellido, setApellido] = <span class="cstat-no" title="statement not covered" >useState("");</span>
+  const [fecha, setFecha] = <span class="cstat-no" title="statement not covered" >useState("");</span>
+  const [hora, setHora] = <span class="cstat-no" title="statement not covered" >useState("");     </span>
+  const irATurnoAgendado = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt;{<span class="cstat-no" title="statement not covered" >pagina("/turnoAgendado", { state: {nombre, apellido,email,telefono,direccion,fecha,hora,especialidad}})}</span></span>
 &nbsp;
   function <span class="fstat-no" title="function not covered" >verificarPaso(</span>) {
 <span class="cstat-no" title="statement not covered" >    setError("");</span>
@@ -577,7 +577,7 @@ export default function Formulario({ pasoInicial = <span class="branch-0 cbranch
     }
   }
 &nbsp;
-  return (
+<span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;div className="card" style={{padding: "30px"}}&gt;
       &lt;h1&gt;Sacar Turno para {especialidad}&lt;/h1&gt;
 &nbsp;
@@ -586,9 +586,9 @@ export default function Formulario({ pasoInicial = <span class="branch-0 cbranch
         &lt;div className={`step ${pasoActual === 1 ? "active" : ""}`}&gt;1&lt;/div&gt;
         &lt;div className={`step ${pasoActual === 2 ? "active" : ""}`}&gt;2&lt;/div&gt;
         &lt;div className={`step ${pasoActual === 3 ? "active" : ""}`}&gt;3&lt;/div&gt;
-        &lt;div className={`step ${pasoActual === 4 ? <span class="branch-0 cbranch-no" title="branch not covered" >"active" </span>: ""}`}&gt;4&lt;/div&gt;
+        &lt;div className={`step ${pasoActual === 4 ? "active" : ""}`}&gt;4&lt;/div&gt;
         &lt;div className={`step ${pasoActual === 5 ? "active" : ""}`}&gt;5&lt;/div&gt;
-        &lt;div className={`step ${pasoActual === 6 ? <span class="branch-0 cbranch-no" title="branch not covered" >"active" </span>: ""}`}&gt;6&lt;/div&gt;
+        &lt;div className={`step ${pasoActual === 6 ? "active" : ""}`}&gt;6&lt;/div&gt;
 &nbsp;
 &nbsp;
 &nbsp;
@@ -659,7 +659,7 @@ export default function Formulario({ pasoInicial = <span class="branch-0 cbranch
           &lt;/div&gt;
         )}
         {pasoActual === 4 &amp;&amp; (
-<span class="branch-1 cbranch-no" title="branch not covered" >         &lt;div&gt;</span>
+         &lt;div&gt;
            &lt;div style={{ display: "flex", gap: "10px" }}&gt;
             &lt;label style={{ width: "150px", fontWeight: "bold" }}&gt;
               Fecha:
@@ -706,11 +706,11 @@ export default function Formulario({ pasoInicial = <span class="branch-0 cbranch
         )}
 &nbsp;
         {pasoActual === 6 &amp;&amp; (
-<span class="branch-1 cbranch-no" title="branch not covered" >            &lt;div&gt;</span>
+            &lt;div&gt;
                 &lt;h1&gt;Tus datos fueron registrados&lt;/h1&gt;
             &lt;/div&gt;
         )}
-        {error &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;p style={{ color: "red", marginTop: "10px" }}&gt;{error}&lt;/p&gt;}</span>
+        {error &amp;&amp; &lt;p style={{ color: "red", marginTop: "10px" }}&gt;{error}&lt;/p&gt;}
 &nbsp;
         {/* Botones */}
         &lt;div className="actions" style={{ marginTop: "20px" }}&gt;
@@ -724,7 +724,7 @@ export default function Formulario({ pasoInicial = <span class="branch-0 cbranch
           &lt;/button&gt;
 &nbsp;
           &lt;button type="submit" className="btn primary"&gt;
-            {pasoActual &lt; 6 ? "Siguiente" : <span class="branch-1 cbranch-no" title="branch not covered" >"sacar Turno"}</span>
+            {pasoActual &lt; 6 ? "Siguiente" : "sacar Turno"}
           &lt;/button&gt;
 &nbsp;
           &lt;button
@@ -745,7 +745,7 @@ export default function Formulario({ pasoInicial = <span class="branch-0 cbranch
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-10-24T20:44:27.870Z
+                at 2025-10-27T13:27:51.254Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

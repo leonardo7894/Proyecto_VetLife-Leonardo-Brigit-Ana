@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">38.09% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/21</span>
+                <span class='fraction'>0/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/6</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/10</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">42.1% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/19</span>
+                <span class='fraction'>0/19</span>
             </div>
         
             
@@ -171,12 +171,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -185,9 +183,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -205,7 +205,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -213,7 +213,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -272,11 +272,11 @@ import "../App.css";
 import { Link } from "react-router-dom";
 &nbsp;
 &nbsp;
-export default function Vacunas() {
-  const [carrito, setCarrito] = useState([]);
-  const [popupVisible, setPopupVisible] = useState(false);
+export default function <span class="fstat-no" title="function not covered" >Vacunas(</span>) {
+  const [carrito, setCarrito] = <span class="cstat-no" title="statement not covered" >useState([]);</span>
+  const [popupVisible, setPopupVisible] = <span class="cstat-no" title="statement not covered" >useState(false);</span>
 &nbsp;
-  const productos = [
+  const productos = <span class="cstat-no" title="statement not covered" >[</span>
     { id: 1, descripcion: "Vacuna1", imagen: "./akkaka.jpeg" },
     { id: 2, descripcion: "Vacuna2", imagen: "./akkaka.jpeg" },
     { id: 3, descripcion: "Vacuna3", imagen: "./akkaka.jpeg" },
@@ -287,9 +287,9 @@ export default function Vacunas() {
     { id: 8, descripcion: "Vacuna8", imagen: "./akkaka.jpeg" },
   ];
   //cuando arranca gurada lo que habia antes 
- useEffect(()=&gt;{
-   const datos =localStorage.getItem("carrito");
-   <span class="missing-if-branch" title="if path not taken" >I</span>if (datos) <span class="cstat-no" title="statement not covered" >setCarrito(JSON.parse(datos));</span>
+<span class="cstat-no" title="statement not covered" > useEffect(<span class="fstat-no" title="function not covered" >()</span>=&gt;{</span>
+   const datos =<span class="cstat-no" title="statement not covered" >localStorage.getItem("carrito");</span>
+<span class="cstat-no" title="statement not covered" >   if (datos) <span class="cstat-no" title="statement not covered" >setCarrito(JSON.parse(datos));</span></span>
  }, [])
 &nbsp;
 &nbsp;
@@ -307,15 +307,15 @@ export default function Vacunas() {
  
  }
 &nbsp;
-  return (
+<span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;div className="titulos"&gt;
       &lt;h1&gt;Vacunas&lt;/h1&gt;
       &lt;img src="./akkaka.jpeg" className="portada" /&gt;
       &lt;h2 className="descripcion"&gt;Gatos&lt;/h2&gt;
 &nbsp;
       &lt;div className="grid"&gt;
-        {productos.map((prod) =&gt; (
-          &lt;div key={prod.id}&gt;
+        {productos.map(<span class="fstat-no" title="function not covered" >(p</span>rod) =&gt; (
+<span class="cstat-no" title="statement not covered" >          &lt;div key={prod.id}&gt;</span>
             &lt;img src={prod.imagen} className="imagenes" /&gt;
             &lt;p className="descripcion"&gt;{prod.descripcion}&lt;/p&gt;
             &lt;button
@@ -330,7 +330,7 @@ export default function Vacunas() {
 &nbsp;
       {/* Popup del carrito */}
       {popupVisible &amp;&amp; (
-<span class="branch-1 cbranch-no" title="branch not covered" >        &lt;div</span>
+        &lt;div
           className="popup-carrito"
           className="carrito"
         &gt;
@@ -376,7 +376,7 @@ export default function Vacunas() {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-10-24T20:44:27.870Z
+                at 2025-10-27T13:27:51.254Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
